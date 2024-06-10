@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+:root{
+    --colorborder: rgb(128, 128, 128);
+    --colortext: white;
+    --colorbg: rgb(46, 46, 46);
+    --colorbg2: rgb(55, 55, 55);
+}
+
+
+.text{
+    --colorborder: rgb(128, 128, 128);
+    --colortext: white;
+    --colorbg: rgb(46, 46, 46);
+    --colorbg2: rgb(55, 55, 55);
+}
+
+.js{
+    --colorborder: rgb(215, 215, 215);
+    --colortext: rgb(255, 255, 255);
+    --colorbg: rgb(170, 149, 80);
+    --colorbg2: rgb(180, 161, 101);
+}
+
+.python{
+    --colorborder: rgb(192, 185, 106);
+    --colortext: rgb(255, 255, 255);
+    --colorbg: rgb(89, 130, 127);
+    --colorbg2: rgb(102, 140, 138);
+}
+
+.html{
+    --colorborder: rgb(210, 210, 210);
+    --colortext: rgb(255, 255, 255);
+    --colorbg: rgb(173, 83, 67);
+    --colorbg2: rgb(191, 103, 87);
+}
+
+.lua{
+    --colorborder: rgb(210, 210, 210);
+    --colortext: rgb(255, 255, 255);
+    --colorbg: rgb(55, 62, 96);
+    --colorbg2: rgb(82, 90, 123);
+}
+
+.css{
+    --colorborder: rgb(210, 210, 210);
+    --colortext: rgb(255, 255, 255);
+    --colorbg: rgb(58, 73, 100);
+    --colorbg2: rgb(80, 89, 120);
+}
+
+::selection{
+    color: black;
+    background: rgba(128, 128, 128, 0.905);
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: Yusei Magic; color: var(--colortext); transition: 50ms;}
+
+a{
+    text-decoration: none;
+    color: default;
+}
+
+body{
+    background-color: var(--colorbg);   
+}
+
+header{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--colorborder);
+}
+
+#select1{
+    border: 1px solid var(--colorborder);
+    background-color: var(--colorbg2);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+.inputtxt{
+    width: 5rem;
+    background-color: var(--colorbg2);
+    border: 1px solid var(--colorborder);
+    border-radius: 3px;
+}
+
+.btnplus{
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 1px solid var(--colorborder);
+    background-color: rgb(69, 137, 54);
+    border-radius: 3px;
+}
+
+.btnminus{
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 1px solid var(--colorborder);
+    background-color: rgb(187, 58, 51);
+    border-radius: 3px;
+}
+
+.replacehide{
+    display: none;
+}
+
+#btnconvert{
+    border: 1px solid var(--colorborder);
+    background-color: var(--colorbg2);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+#btncopyout{
+    border: 1px solid var(--colorborder);
+    background-color: var(--colorbg2);
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.sectiontop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sectiontxt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textinput, #textoutput{
+    margin: 1rem;
+    width: 47vw;
+    height: 80vh;
+    background-color: var(--colorbg2);
+    border: 1px solid var(--colorborder);
+    border-radius: 7px;
+}
+
+#replacementlistEl{
+    background-color: rgba(30, 30, 30, 0.141);
+    border-radius: 4px;
+    padding: 0.3rem;
+    list-style: none;
+    font-size: 0.9rem;
+}

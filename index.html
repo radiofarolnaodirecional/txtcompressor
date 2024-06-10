@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+</head>
+<body>
+    <header>
+        <a href="">Txt compressor</a>
+    </header>
+
+    <section class="sectiontop">
+        <select name="" id="select1">
+            <option value="text">Text</option>
+            <option value="js">Javascript</option>
+            <option value="python">Python</option>
+            <option value="html">html</option>
+            <option value="lua">Lua</option>
+            <option value="css">css</option>
+        </select>
+        <input type="checkbox" id="checkreplace">Replace variables</input>
+        <input type="text" class="inputtxt replacehide" id="replacein">
+        <div class="replacehide">to</div>
+        <input type="text" class="inputtxt replacehide" id="replaceout">
+        <button class="btnplus replacehide" onclick="addtoreplacelist()">+</button>
+        <button class="btnminus replacehide" onclick="removeLast()">-</button>
+        <ul id="replacementlistEl" class="replacehide"></ul>
+        <button id="btnconvert">convert</button>
+        <button id="btncopyout" onclick="copyoutout()">copy output</button>
+    </section>
+
+    <section class="sectiontxt">
+        <textarea id="textinput" name="" placeholder="Input"></textarea>
+        <textarea id="textoutput" name="" placeholder="Output"></textarea>
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
